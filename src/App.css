@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+}
+
+body {
+  font-family: "Roboto Condesed", sans-serif;
+}
+
+/*****Header****/
+
+/********Typed*******
+
+/********Header main offer button*******/
+
+.btn-main-offer {
+  border: 1px solid var(--primary-orange);
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+  text-decoration: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: -0.00933333em;
+  border-color: #fff;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .btn-main-offer {
+    font-size: 15px;
+    border: 2px solid var(--primary-orange);
+  }
+}
+
+.btn-main-offer:hover {
+  background-color: white;
+  transition: 0.2s ease-in-out;
+  color: black;
+}
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
+}
+
+.header-wraper .next {
+  bottom: 10px;
+  left: 50%;
+  z-index: 1;
+}
+
+.header-wraper .next img {
+  width: 50px;
+  animation: arrowBlink 1s infinite;
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+.navbar {
+  margin: 0 auto;
+}

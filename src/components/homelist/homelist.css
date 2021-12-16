@@ -1,0 +1,26 @@
+.homelist {
+    font-size: 20px;
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightcoral;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(202, 87, 255);
+    border-color: rgb(72, 85, 85);
+}
+
+@media (max-width: 768px) {
+    .homelist {
+        font-size: 14px;
+        margin: 0.1rem;
+    }
+}
+
+
+
+.homelist:hover {
+    background-color: lightgreen;
+    color: white;
+}
+

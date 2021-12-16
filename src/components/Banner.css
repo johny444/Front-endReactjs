@@ -1,0 +1,55 @@
+.banner-container {
+    max-width: 960px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    z-index: 2;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    scrollbar-width: none;
+    display: flex;
+    
+}
+
+.banner-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.banner-bg {
+    height: 500px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(web2.jpg) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.banner-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.banner-text {
+    color: #fff;
+    text-align: center;
+}
+
+.banner-btn {
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+    margin: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: transparent;
+}
+
+.banner-btn:hover {
+    background: transparent;
+    background-color: rgb(255, 115, 0);
+}
+

@@ -1,0 +1,124 @@
+
+
+
+.header-wraper {
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    scrollbar-width: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#757F9A, #D7DDE8);
+  }
+  .header-wraper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  
+  video {
+    top:0; left: 0;
+    z-index: 0;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    display: flex;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    scrollbar-width: none;
+
+  }
+  
+  .slider-navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+    top: 12rem;
+    z-index: 2;
+  }
+  
+  .slider-navigation .nav-btn {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+    outline: none;
+    z-index: 3;
+  }
+  
+  .slider-navigation .nav-btn.active{
+    background: rgb(255, 123, 0);
+    z-index: 3;
+  }
+  
+  .slider-navigation .nav-btn:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .slider-navigation .nav-btn:hover {
+    transform: scale(1.2);
+  }
+  
+  .video-slide {
+    clip-path: circle(0% at 0 50%);
+  }
+  
+  .video-slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+    position: absolute;
+  }
+  
+  .main-info {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto Condesed", sans-serif;
+  }
+  
+  .main-info h1 {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "League Gothic", Impact, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.00933333em;
+    
+  }
+  
+  .typed-text {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: -0.00933333em;
+    text-shadow: 0px 0px 6px;
+  }
+  
+  @media (max-width: 768px) {
+    .header-wraper {
+      height: 800px;
+      width: 100%;
+    }
+    .main-info h1 {
+      font-size: 1.6rem !important;
+    }
+    .typed-text {
+      font-size: 1.3rem;
+    }
+  }

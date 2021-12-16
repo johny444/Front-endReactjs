@@ -1,0 +1,14 @@
+.footer {
+    background: rgb(22, 21, 21);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 0 2rem;
+    }
+}

@@ -1,0 +1,116 @@
+.intro {
+  background-color: white;
+  width: 100%;
+  height: calc(100vh - 70px);
+  scroll-behavior: smooth;
+  z-index: 2;
+  scroll-snap-type: y mandatory;
+  scroll-snap-align: start;
+  scrollbar-width: none;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+}
+
+.intro::-webkit-scrollbar {
+  display: none;
+}
+
+.left {
+  flex: 0.5;
+  overflow: hidden;
+}
+.imgContainer img {
+  width: 500px;
+  background-color: #524e4d;
+  border-radius: 50%;
+  align-items: flex-end;
+  justify-content: center;
+  float: right;
+  height: 90%;
+}
+
+@media (max-width: 768px) {
+  .imgContainer img  {
+    height: 50%;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+.intro .right {
+  flex: 0.5;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px)  {
+  .wrapper {
+    padding-left: 0;
+    align-items: center;
+  }
+}
+
+h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+
+h3 span {
+  font-size: inherit;
+  color: #ff6347;
+}
+
+.ityped-cursor {
+  animation: blink 1s infinite;
+  font-size: 2.2rem;
+  -webkit-animation: blink 0.3s infinite;
+  -moz-animation: blink 0.3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+.right a {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+}

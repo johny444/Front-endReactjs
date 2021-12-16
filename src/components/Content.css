@@ -1,0 +1,67 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    z-index: 2;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    scrollbar-width: none;
+    background-size: cover;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.content-r {
+    align-items: center;
+    justify-content: center;
+}
+
+.content-r p {
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+   
+}
+
+.content-r h2:hover {
+    color: #FF7F50;
+}
+
+ .content-r a{
+    color: rgb(21, 19, 22);
+    font-family: "League Gothic", Impact, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.content-con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-con:first-child, .content-con:last-child {
+    padding: 5rem 0;
+}
+
+.content-l img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content-r {
+    padding: 2rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 480px) {
+    .content-con {
+        flex-direction: column;
+    }
+    .content-con :nth-child(2) .content-r {
+        order: 1;
+    }
+}
+
+.extra-content:hover {
+     color: rgb(255, 0, 0);
+}
